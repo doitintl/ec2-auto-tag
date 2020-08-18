@@ -20,7 +20,6 @@ def aws_create_tag(_aws_region, _instance_id: str, _key_name: str, _tag_value: s
 
 
 def lambda_handler(event, context):
-    print(event)
     if 'detail' in event:
         try:
             if 'userIdentity' in event['detail']:
